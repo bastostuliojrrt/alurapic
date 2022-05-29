@@ -1,0 +1,41 @@
+* Data Biding
+
+	{{ variavel }} -> angular expression ao qual aponta para uma propriedade dentro do component.ts
+
+	[[]] -> OneWay databiding faz com que os dados saem do component.ts e vão para o template
+
+	Decoretor @Input() -> Inbound property, ou seja, aceitam receber valores através de suas formas declarativas
+
+
+## Diretivas
+	
+	Diretivas podem mudar o comportamento de um componente existente
+
+	*ngFor -> *ngFor="let photo of photos" cria um array chamado photos e intera valores em variáveis photo
+
+
+## Components
+
+	Declarations -> módulos exportados
+
+	Imports -> módulos importados
+
+	Exports -> componentes exportados
+
+## Realizando o import do HttpClient
+
+	No app.module realizar o:
+	-> import { HttpClientModule } from '@angular/common/http';
+
+	No imports colocar o HttpClientModule
+
+	Em seguida, dentro do app.components realizer o:
+	-> import { HttpClient } from '@angular/common/http'
+
+	Criar um constructor para instanciar o HttpClient:
+	-> constructor(http: HttpClient){
+    		console.log(http);
+  		}
+
+
+
